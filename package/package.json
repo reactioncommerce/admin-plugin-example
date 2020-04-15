@@ -1,0 +1,42 @@
+{
+  "name": "@reactioncommerce/admin-plugin-example",
+  "version": "0.0.0-development",
+  "description": "Reaction admin example plugin",
+  "homepage": "https://github.com/reactioncommerce/admin-plugin-example",
+  "repository": "https://github.com/reactioncommerce/admin-plugin-example",
+  "author": {
+    "name": "Reaction Commerce",
+    "email": "engineering@reactioncommerce.com",
+    "url": "https://reactioncommerce.com"
+  },
+  "license": "Apache-2.0",
+  "private": false,
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "../reaction-build-plugin"
+  },
+  "dependencies": {
+    "@reactioncommerce/file-collections": "^0.7.3",
+    "clone": "^2.1.2",
+    "clsx": "^1.1.0",
+    "csv-parse": "^4.8.8",
+    "deep-equal": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "react-dropzone": "^10.2.2",
+    "reacto-form": "^1.5.0"
+  },
+  "peerDependencies": {
+    "@reactioncommerce/api-utils": ">=1.10.0",
+    "@reactioncommerce/admin-core": ">=1.0.0",
+    "@reactioncommerce/catalyst": ">=1.19.1",
+    "simpl-schema": ">=1.5.7"
+  },
+  "release": {
+    "branches": [
+      "trunk"
+    ]
+  }
+}
